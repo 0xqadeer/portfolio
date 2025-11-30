@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>0xqadeer — Cybersecurity Engineer & Bug Bounty Hunter</title>
+  <meta name="description" content="Qadeer — Web & Mobile AppSec, Cloud Security, API testing. Bug bounty hunter & AppSec researcher." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#fcfcfc; --accent:#ff00ff; --glass: rgba(255,255,255,0.03);
+      --maxw:1100px; --radius:12px;  
+    }
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background: linear-gradient(180deg,#0A0f1f 0%, #081426  100%); color:#0000ff;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:28px; display:flex; justify-content:center;
+    }
+    .wrap{width:100%; max-width:var(--maxw);} 
+    header{
+      display:flex; gap:18px; align-items:center; justify-content:space-between;
+      margin-bottom:20px;
+    }
+    .brand{display:flex; gap:12px; align-items:center;}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#ff00ff,#8a2be2);
+      display:flex;align-items:center;justify-content:center;color:#04202a;font-weight:800;font-size:20px;
+      box-shadow:0 6px 24px rgba(46,229,183,0.08);
+    } 
+    .name {line-height:1;}
+    .name h1{margin:0;font-size:18px}
+    .name p{margin:0;color:var(--muted);font-size:12px}
+    .controls{display:flex;gap:8px;align-items:center;}
+    .btn{
+      background:var(--glass); border:1px solid rgba(255,255,255,0.04);
+      padding:8px 12px;border-radius:10px;color:var(--accent);font-weight:600;cursor:pointer;
+    }
+    .grid{
+      display:grid; grid-template-columns: 1fr 360px; gap:18px;
+    }
+
+    /* Left column */
+    main{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px; border-radius:var(--radius);}
+    .hero{display:flex;gap:18px;align-items:center;margin-bottom:14px;}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#08162a,#0b2233);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:28px}
+    .intro h2{margin:0;font-size:20px}
+    .intro p{margin:6px 0 0;color:var(--muted)}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02);font-weight:600;color:var(--accent);font-size:13px;margin-right:8px}
+
+    section{margin-top:14px}
+    h3{margin:0 0 10px 0;font-size:15px}
+    .about{color:var(--muted);line-height:1.55}
+
+    .skills{
+      display:flex;flex-wrap:wrap;gap:8px;
+    }
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-weight:600;color:#8a2be2;font-size:13px}
+
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));
+      border-radius:10px;padding:12px;border:1px solid rgba(255,255,255,0.02);
+    }
+    .card h4{margin:0 0 6px 0}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+
+    /* Right column */
+    aside{position:sticky; top:28px; align-self:start; background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02)); padding:14px; border-radius:var(--radius); border:1px solid rgba(255,255,255,0.02)}
+    .stat{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+    .stat .label{color:var(--muted);font-size:13px}
+    .stat .val{font-weight:700}
+
+    .fame-list{display:flex;flex-direction:column;gap:8px}
+    .fame-item{display:flex;justify-content:space-between;gap:8px;padding:8px;border-radius:8px;background:rgba(255,255,255,0.02)}
+    .contact{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+    .input{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:10px;border-radius:8px;color:inherit}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* responsive */
+    @media (max-width:920px){
+      .grid{grid-template-columns:1fr}
+      aside{position:relative; top:auto}
+      .projects{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" id="site">
+    <header>
+      <div class="brand">
+        <div class="avatar">👨</div>
+        <div class="name">
+          <h1>.0x</h1>
+          <p>Cybersecurity Engineer • Bug Bounty Hunter • Applaction security Researcher HackerOne</p>
+        </div>
+      </div>
+      <div class="controls">
+    <button class="btn" id="https://www.hackerone.com">I1ackerOne</button>
+        <button class="btn" id="--accent:#6ee7b7;">🌙</button>
+        <button class="btn" id="--accent:#6ee7b7;">Exploit Crew 🔬</button>
+          
+      
+      
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <div class="hero">
+          <div class="avatar">Q</div>
+          <div class="intro">
+            <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+              <span class="chip">Web & Mobile AppSec</span>
+              <span class="chip">Cloud Security</span>
+              <span class="chip">API Testing</span>
+              <span class="chip">Offensive Security</span>
+              <span class="chip">Bug Bounty</span>
+            </div>
+            <h2>Hi — I'm 0xqadeer. I find bugs before attackers do.</h2>
+            <p class="small">I hunt vulnerabilities,secure web Work on Application Security Researcher,@HackerOne  I like minimal exploits and maximum impact.</p>
+          </div>
+        </div>
+
+        <section>
+          <h3>About</h3>
+          <p class="about">i'm Application Security Researcher with hands-on experience in Offensive security, vulnerability research, and penetration testing My work focuses on securing web,mobile,and cloud applications through continuous assessment, exploit development, and proactive defense Strategies.    Active on HackerOne, .</p>
+        </section>
+
+        <section>
+          <h3>Core Skills</h3>
+          <div class="skills">
+            <div class="skill">Security Research</div>
+            <div class="skill">Web Application Security</div>
+            <div class="skill">OAuth & SSO</div>
+            <div class="skill">Cloud API Security</div>
+            <div class="skill">Offensive Security Research</div>
+            <div class="skill">Exploit Development</div>
+            <div class="skill">vulnerabilit Assessment & Exploitation</div>
+          
+          
+          
+          
+         
+          
+          </div>
+        </section>
+
+        <section>
+          <h3>Selected Projects</h3>
+          <div class="projects">
+            <article class="card">
+              <h4>API Authorization Flows — Report</h4>
+              <div class="meta">Year: 2025 • Responsible Disclosure</div>
+              <p class="small">Found broken object-level authorization in a payment API resulting in read/write access to other users' transactions. Provided PoC + mitigation (claims validation & strict access checks).</p>
+              <div class="tags" style="margin-top:8px">
+                <span class="chip">API</span><span class="chip">PoC</span><span class="chip">OWASP A5</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h4>Mobile OAuth Token Leakage</h4>
+              <div class="meta">Year: 2024 • Private disclosure</div>
+              <p class="small">Discovered tokens exposed via debug logs and insecure storage. Delivered patch suggestions and secure storage example (Keychain / Keystore).</p>
+              <div class="tags" style="margin-top:8px">
+                <span class="chip">Mobile</span><span class="chip">OAuth</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h4>Cloud Role Escalation Playbook</h4>
+              <div class="meta">Year: 2025 • Internal</div>
+              <p class="small">Automated checks for permissive IAM policies and risky resource-wide roles. Created remediation templates and least-privilege examples.</p>
+              <div class="tags" style="margin-top:8px">
+                <span class="chip">Cloud</span><span class="chip">Automation</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h4>CTF: Web Exploits Toolkit</h4>
+              <div class="meta">Personal Project • 2023</div>
+              <p class="small">A small kit of reproducible training labs for common web vulnerabilities — XSS, SSTI, IDOR, and broken auth flows.</p>
+              <div class="tags" style="margin-top:8px">
+                <span class="chip">Tools</span><span class="chip">Training</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h3>Experience Highlights</h3>
+          <div class="card" style="padding:12px;margin-top:8px">
+            <strong>AppSec Researcher — HackerOne (contract)</strong>
+            <div class="small" style="margin-top:6px">Investigations, triage, and vulnerability validation across multiple programs. Focus on reducing false positives and improving reproduction steps.</div>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Responsible disclosure process & remediation guidance</li>
+              <li>Automated PoC generation & reproducible test cases</li>
+              <li>Mentored junior researchers on reporting best practices</li>
+            </ul>
+          </div>
+        </section>
+
+        <footer>
+          <div>Want a tailored report or a vulnerability assessment? Ping me — I love new challenges. ⚡</div>
+        </footer>
+      </main>
+
+      <aside>
+        <div class="stat"><div class="label">Top Programs</div><div class="val">6</div></div>
+        <div class="stat"><div class="label">Valid Reports</div><div class="val">~120</div></div>
+
+        <section style="margin-top:12px">
+          <h3>Licenses & Certifications</h3>
+          <div class="fame-list">
+            <div class="fame-item"><div>OffSec — OSCP</div><div class="small">2023</div></div>
+            <div class="fame-item"><div>Offsec — OSWE</div><div class="small">2024</div></div>
+            <div class="fame-item"><div>EC Council — CEH</div><div class="small">2021</div></div>
+          </div>
+        </section>
+
+        <section style="margin-top:12px">
+          <h3>Contact</h3>
+          <div class="contact"></div>
+           
+        <a class="btn" href="mailto:abdulqadeerkhan.0x@outlook.com?subject=Hello%20Qadeer"style="text-decoration:none;display:inline-block;width:100%;text-align:center">Email Me</a>
+            
+            <div class="small" style="margin-top:8px">— links below.</div>
+
+
+             <a class="btn" id="linkedin" href="linkedin.com/in/abdul-qadeer-khan-991a1739a" style="text-decoration:none;display:inline-block;text-align:center">LinkedIn</a>
+            <a class="btn" id="twitter" href="https://x.com/0xqadeer?s=11" style="text-decoration:none;display:inline-block;text-align:center">Twitter</a>
+             
+             <a class="btn" id="discord" href="https://discord.gg/v4aDAzV3" style="text-decoration:none;display:inline-block;text-align:center">Discord</a>
+             <a class="btn" id="youtube" href="https://www.youtube.com/channel/UCI-X25-lNtjAJC5RITiizAw" style="text-decoration:none;display:inline-block;text-align:center">Youtube</a>
+            
+          </div>
+
+
+
+          
+          </div>
+        </section>
+
+        <section style="margin-top:12px">
+        
+          <div style="display:flex;flex-direction:column;gap:6px">
+          
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // Replace these placeholders with your real values
+     index.html or change to your hosted URL
+    const EMAIL = "abdulqadeerkhan.0x@outlook.com";
+    const GitHub = "https://github.com/0xqadeer";
+    const instagram = "https://www.instagram.com/0xqadeer";
+    const LinkedIn =  "https://linkedin.com/in/abdul-qadeer-khan-a12655397";
+    const Twitter = "https://x.com/0xqadeer?s=11";
+
+    // Wire up buttons
+    
+    });
+    document.getElementById('copyEmail').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(EMAIL);
+        alert("Email copied: " + EMAIL);
+      } catch(e) {
+        prompt("Copy this email:", EMAIL);
+      }
+    });
+    document.getElementById('github').href = GH;
+    document.getElementById('site').querySelector('a[href="#"]').setAttribute('href', H1);
+
+    // Theme toggle persisted
+    const themeToggle = document.getElementById('themeToggle');
+    const DARK = true;
+    function applyTheme(isDark){
+      if(!isDark){
+        document.documentElement.style.setProperty('--bg','#f6f8fb');
+        document.documentElement.style.setProperty('--card','#ffffff');
+        document.documentElement.style.setProperty('--muted','#475569');
+        document.documentElement.style.setProperty('--accent','#0b7285');
+        document.documentElement.style.color = '#0b1220';
+        document.body.style.background = 'linear-gradient(180deg,#f7fbff,#eef6ff)';
+        themeToggle.textContent = '🌙';
+      } else {
+        // reset to default dark (CSS defaults)
+        document.documentElement.style.removeProperty('--bg');
+        document.documentElement.style.removeProperty('--card');
+        document.documentElement.style.removeProperty('--muted');
+        document.documentElement.style.removeProperty('--accent');
+        document.body.style.background = '';
+        document.documentElement.style.color = '';
+        themeToggle.textContent = '☀️';
+      }
+      localStorage.setItem('portfolio-dark', isDark ? '1' : '0');
+    }
+    themeToggle.addEventListener('click', () => {
+      const cur = localStorage.getItem('portfolio-dark') !== '0';
+      applyTheme(!cur);
+    });
+    // init
+    const saved = localStorage.getItem('portfolio-dark');
+    applyTheme(saved === null || saved === '1');
+
+    // small accessibility: focus outlines for keyboard users
+    document.addEventListener('keydown', e => {
+      if(e.key === 'Tab') document.body.classList.add('user-tabbed');
+    });
+
+  </script>
+</body>
+</html>
